@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="text">
+        Hi This is random text to be blur for css transitions in actual website after set interval of time
+    </div>
+    <!-- I will style this text with Javascript -->
+
+    <script>
+
+        let line = document.getElementById('text');
+        setTimeout(function(){
+            // line.style.fontWeight="bold";
+            line.style.opacity=0;
+        
+        },3000);
+
+
+
+
+//         function del() {
+//   let arr = ["Action 1", "Action 2", "Action 3",1,2,3,4,5,6,667,8,8];
+  
+//   arr.forEach((arr, index) => {
+//     setTimeout(() => {
+//       console.log(arr);
+//     }, index * 1000);  // This command cause 1 second delay in execution
+//   });
+// }
+
+// del();
+
+
+
+        function greet(name, text){
+            console.log("Hi "+ name+" " +text);
+        }
+        timeOut=setTimeout(greet,3000,"Anonymous", "How have you been");
+        console.log(timeOut);   
+
+        clearTimeout(timeOut);
+
+    </script>
+</body>
+</html>
